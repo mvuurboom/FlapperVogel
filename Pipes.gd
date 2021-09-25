@@ -2,6 +2,8 @@ extends Node2D
 
 #called when added to the scene
 func _ready():
+	#add to a group for easier cleanup
+	add_to_group("pipes")
 	#Set pause_mode to actually stop doing stuff when paused
 	pause_mode = Node.PAUSE_MODE_STOP
 	#set to random height
