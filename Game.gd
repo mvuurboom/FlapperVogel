@@ -20,8 +20,7 @@ func startgame():
 	#make the label 'press space to start' invisible
 	$LabelStartGame.visible = false
 	#remove pipes from the 'Pipes' node if the exsist
-	for pipes in get_tree().get_nodes_in_group("pipes"):
-		pipes.queue_free()
+	
 	#reset the bird
 	Flappy.reset()
 	#create 5 new pipes outside the screen (starting on x = 1056) 256 pixel apart
